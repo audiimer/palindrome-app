@@ -1,2 +1,1 @@
 # palindrome-app
-# palindrome-app

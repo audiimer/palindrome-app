@@ -2,6 +2,10 @@
 const button = document.getElementById("check-button");
 const input = document.getElementById("word-input");
 
+//Initial input values
+input.value = "";
+input.style.color = "black";
+
 // A variable to keep track of whether the user has pressed enter or not
 let hasPressedEnter = false;
 
@@ -9,9 +13,6 @@ let hasPressedEnter = false;
 button.addEventListener("click", function () {
     // Get the value of the input element
     const inputValue = input.value;
-
-    // Clear the input element
-    input.value = "";
 
     // Check if the input is empty, not a word, or has less than 2 characters
     if (inputValue === "" || !/^[a-zA-Z]+$/.test(inputValue) || inputValue.length<2) {
@@ -30,11 +31,11 @@ button.addEventListener("click", function () {
     }
     if (newWord.toLowerCase() === inputValue.toLowerCase()) {
         // If the input is a palindrome, display a success message
-        input.value = "Palindrome!!!!";
+        input.value = `${inputValue} is a Palindrome!`;
         input.style.color = "green";
     } else {
         // If the input is not a palindrome, display a failure message
-        input.value = "Not Palindrome";
+        input.value = `${inputValue} is not a Palindrome`;
         input.style.color = "red";
     }
 

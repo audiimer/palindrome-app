@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --grey: #eee;
+  --dark-grey: #222831;
+}
+
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  background-image: url('https://www.cosmopolitanme.com/cloud/2021/09/09/D4oa9RkC-Yay-1200x900.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  opacity: 0.8;
+  position: relative;
+  top: 40px;
+
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 100px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  bottom: 225px;
+  border: 2px solid transparent;
+  border-image: linear-gradient(to right, #00bcd4, #7a2eb1, #ff0066) 1/5;
+
+}
+
+
+.form hr {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: #ccc;
+  margin: 10px 0;
+}
+
+.form input {
+  padding: 10px;
+  margin-bottom: -12px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  color: #999;
+  font-style: italic;
+  font-size: 20px;
+}
+
+
+.form button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #b91818;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.form button:hover {
+  background-color: #cab434;
+}
+
+#btnTxt {
+  transition: transform .6s ease;
+}
+
+#btnTxt:hover {
+  transform: rotateY(180deg);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: linear-gradient(90deg, #fdcada, #f7e4eb, #fffcdb);
+  font-family: "Open Sans", sans-serif;
+
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
